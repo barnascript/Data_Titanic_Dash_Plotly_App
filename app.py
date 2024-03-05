@@ -12,7 +12,7 @@ app = Dash(__name__, pages_folder="pages", use_pages=True, external_stylesheets=
 
 app.layout= html.Div([
     html.Br(),
-    html.P("Titanic Dash-Plotly Web App", className="text-dark text-center fw-bold fs-1"),
+    html.P("Titanic-Dash-Plotly Web App", className="text-dark text-center fw-bold fs-1"),
     html.Div(children=[
         dcc.Link(page['name'], href=page["relative_path"], className="btn btn-dark m-2 fs-5")\
                 for page in dash.page_registry.values()
